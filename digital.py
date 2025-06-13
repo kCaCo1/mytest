@@ -31,9 +31,7 @@ mission_data = {
     "难度": ["★☆☆☆☆", "★★☆☆☆", "★★★☆☆"]
 }
 mission_df = pd.DataFrame(mission_data)
-st.table(mission_df.style.applymap(
-    lambda x: 'color: #0f0' if x == "✅ 完成" else 'color: #ff0')
-)
+st.table(mission_df)
 
 # 代码块展示
 st.subheader("🔐 最新代码成果")
