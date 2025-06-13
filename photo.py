@@ -33,7 +33,7 @@ def nextImg():
 c1, c2 = st.columns(2)
 
 with c1:
-    st.button('上一张', onclick=prevImg, use_container_width=True)
+    st.button('上一张', on_click=prevImg, use_container_width=True)
 
 with c2:
     st.button('下一张', on_click=nextImg, use_container_width=True)
